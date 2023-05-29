@@ -1,0 +1,19 @@
+/*contenido lore con bs*/
+@mixin contStyle{
+    background-color: #1a132a;
+    color: white;
+    text-align: justify;
+}
+
+
+#contenido-m {
+    @include contStyle();
+}
+
+#contenido {
+    @include contStyle();
+}
+
+#contenido-m span {
+    color: red;
+}

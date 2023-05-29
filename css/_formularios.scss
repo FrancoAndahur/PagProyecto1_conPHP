@@ -1,0 +1,37 @@
+/* formularios */
+
+#titulo-form {
+    color: white;
+}
+
+#form-box {
+    background-color: #1a132a;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.25);
+}
+
+.form button {
+    background-color: #0b061a;
+    border: solid;
+    border-color: #0b061a;
+}
+
+.form button:hover {
+    background: goldenrod;
+    border-color: brown
+}
+
+.form {
+    text-align: center;
+}
+
+.form a {
+    color: goldenrod;
+}
+
+.form a:hover {
+    color: brown;
+}
+
+#message {
+    color: #d8d8d8;
+}
