@@ -49,7 +49,7 @@
                         title="Ir al inicio de la pagina">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a href="nosotrosd.html" class="nav-link"
+                        <a href="nosotrosd.php" class="nav-link"
                         data-bs-toggle="tooltip" data-bs-placement="bottom"
                         title="Informacion sobre quienes somos">Nosotros</a>
                     </li>
@@ -306,7 +306,7 @@
                             <button type="submit" class="btn btn-primary btn-lg">Ingresar</button>
                         </div>
                         <p id="message" class="text-center mb-0 mt-4">¿no estas registrado?</p>
-                        <a href="registro.html">¡Quiero registrarme!</a></p>
+                        <a href="registro.php">¡Quiero registrarme!</a></p>
                     </form>
                 </div>
             </div>
