@@ -97,8 +97,8 @@
                         <input type="text" class="form-control mb-3" name="nombre" placeholder="Nombre">
                         <input type="text" class="form-control mb-3" name="apellido" placeholder="Apellido">
                         <input type="text" class="form-control mb-3" name="usuario" placeholder="Usuario">
-                        <input type="text" class="form-control mb-3" name="correo" placeholder="Correo">
-                        <input type="text" class="form-control mb-3" name="contraseña" placeholder="Contraseña">
+                        <input type="eamail" class="form-control mb-3" name="correo" placeholder="Correo">
+                        <input type="password" class="form-control mb-3" name="contraseña" placeholder="Contraseña">
                         <h6 class="sub-titulo">Fecha de nacimiento:</h6>
                         <input type="date" class="form-control mb-3" name="nacimiento" placeholder="Nacimiento">
                         <select class="form-select" name="genero">

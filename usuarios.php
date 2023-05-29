@@ -19,6 +19,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
 </head>
+<script>
+    function confirmacion(){
+        var respuesta=confirm("¿Desea borrar permanentemente el registro?");
+        if(respuesta==true){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+</script>
 <body class="body" background="img/fondo-crud.jpg">
     <div class="container mt-5">
         <div class="row">
@@ -40,7 +51,7 @@
                     </select>
                     <br>
                     <input type="text" class="form-control mb-3" name="telefono" placeholder="Teléfono">
-                    <input type="submit" class="btn btn-primary">
+                    <button type="submit" class="btn btn-primary">Registrar</button>
                 </form>
             </div>
             <div class="col-md-9">
@@ -72,12 +83,12 @@
                                 <th><?php echo $row['usuario']?></th>
                                 <th><?php echo $row['correo']?></th>
                                 <th><?php echo $row['contraseña']?></th>
-                                <th><?php echo $row['nacimiento']?></th>
+                                <th><?php echo date("d/m/Y", strtotime($row['nacimiento']))?></th>
                                 <th><?php echo $row['genero']?></th>
                                 <th><?php echo $row['telefono']?></th>
 
                                 <th><a href="editar.php?id=<?php echo $row['id'] ?>" class="btn btn-info">Editar</a></th>
-                                <th><a href="eliminar.php?id=<?php echo $row['id'] ?>" class="btn btn-danger">Eliminar</a></th> 
+                                <th><a href="eliminar.php?id=<?php echo $row['id'] ?>" class="btn btn-danger" onclick="return confirmacion()">Eliminar</a></th> 
                             </tr>
                         <?php
                             }
