@@ -1,10 +1,3 @@
-<?php
-
-    include("conexion.php");
-    $con=conectar();
-
-?>
-
 <!DOCTYPE html>
 <html lang="es-ES">
 
@@ -43,7 +36,7 @@
                         <a href="index.php" class="nav-link">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a href="nosotros.php" class="nav-link">Nosotros</a>
+                        <a href="#" class="nav-link">Nosotros</a>
                     </li>
                     <li class="nav-item">
                         <a href="index.php" class="nav-link">Ingresar</a>
@@ -86,39 +79,95 @@
             </button>
         </div>
 
-        <!--Contenido multimedia de la pagina-->
-
         <div class="container">
-            <div class="row justify-content-center mt-5">
-                <div id="form-box" class="col-md-4 p-3">
-                    <form class="form" action="insertar2.php" method="POST">
-                        <h3 id="titulo-form">Ingrese datos</h3>
-                
-                        <input type="text" class="form-control mb-3" name="nombre" placeholder="Nombre">
-                        <input type="text" class="form-control mb-3" name="apellido" placeholder="Apellido">
-                        <input type="text" class="form-control mb-3" name="usuario" placeholder="Usuario">
-                        <input type="text" class="form-control mb-3" name="correo" placeholder="Correo">
-                        <input type="text" class="form-control mb-3" name="contraseña" placeholder="Contraseña">
-                        <h6 class="sub-titulo">Fecha de nacimiento:</h6>
-                        <input type="date" class="form-control mb-3" name="nacimiento" placeholder="Nacimiento">
-                        <select class="form-select" name="genero">
-                                    <option selected>Selecciona tu género</option>
-                                    <option value="Masculino">Masculino</option>
-                                    <option value="Femenino">Femenino</option>
-                                    <option value="Otro">Otro</option>
-                        </select>
-                        <br>
-                        <input type="text" class="form-control mb-3" name="telefono" placeholder="Teléfono">
-                        <div class="d-grid gap-2">
-                            <button type="submit" class="btn btn-primary btn-lg">Registrarse</button>
-                        </div>
-                    </form>
+            <div class="row">
+                <div class="col-md-12">
+                    <article id="contenido-m" class="p-3">
+                        <h2>Quienes somos</h2>
+                        <p>Somos una pagina tipo "foro", destinada principalmente a la entrega de 
+                            información sobre esta saga tan amada llamada "God of war", las cual cuenta con 
+                            una infinidad de información para poder nutrir nuestro hambre de 
+                            conocimiento. Toda información contenida en esta pagina, esta basada casi en su 100%
+                            en los juegos de la saga, además de otros sitios con información original y legítima.
+                        </p>
+                    </article>
                 </div>
             </div>
         </div>
-    </div>
 
+        <div class="separacion_aside"></div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-9">
+                        <!-- Contenido del artículo -->
+                        <article id="contenido-m" class="p-3">
+                            <h2>¿Que es God of War?</h2>
+                            <p>
+                                <b>God of War</b> es una franquicia de videojuegos hack and slash creada por SCE Santa
+                                Monica Studio y distribuida por Sony Computer Entertainment. Se basa en las aventuras
+                                de un semidiós espartano, <span>Kratos</span>, quien se enfrenta a
+                                diversos personajes de la mitología griega y nórdica, tanto héroes como (Heracles,
+                                Teseo, Perseo, etc.); especies mitológicas (gorgonas, arpías, o minotauros); dioses
+                                griegos (Ares, Poseidón, Zeus, entre otros), titanes (como Cronos) y dioses
+                                primordiales (como Gaia). Aunque el guerrero espartano acostumbra enemistad con la
+                                mayoría de los dioses, recibe ayuda de muchos de ellos en algún momento de cada
+                                entrega, en especial de Atenea.
+                            </p>
+                        </article>
+                        <article id="contenido-m" class="p-3">
+                            <h2>¿Que es God of War?</h2>
+                            <p>
+                                <b>God of War</b> es una franquicia de videojuegos hack and slash creada por SCE Santa
+                                Monica Studio y distribuida por Sony Computer Entertainment. Se basa en las aventuras
+                                de un semidiós espartano, <span>Kratos</span>, quien se enfrenta a
+                                diversos personajes de la mitología griega y nórdica, tanto héroes como (Heracles,
+                                Teseo, Perseo, etc.); especies mitológicas (gorgonas, arpías, o minotauros); dioses
+                                griegos (Ares, Poseidón, Zeus, entre otros), titanes (como Cronos) y dioses
+                                primordiales (como Gaia). Aunque el guerrero espartano acostumbra enemistad con la
+                                mayoría de los dioses, recibe ayuda de muchos de ellos en algún momento de cada
+                                entrega, en especial de Atenea.
+                            </p>
+                        </article>
+                    </div>
+                    <div class="col-md-3">
+                        <article id="contenido-m" class="p-3">
+                            <img src="img/Kratos_faceoff.jpg" class="card-img-top" alt="Imagen 1 kratos">
+                        </article>
+                        
+                
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+        <div class="separacion_aside"></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <article id="contenido-m" class="p-3">
+                        <img src="img/Mapa_de_God_of_War_3.jpg" class="card-img-top" alt="Imagen 1 kratos">
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article id="contenido-m" class="p-3">
+                        <img src="img/Kratos_de_espalda.jpg" class="card-img-top" alt="Imagen 1 kratos">
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article id="contenido-m" class="p-3">
+                        <a href="https://www.juegosdiarios.com/juegos/god-of-war.html" target="_blank">
+                            <img src="img/juego_pirata_GOW.png" class="card-img-top" alt="Imagen 1 kratos">
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </div>
+
+    </div>
     <div class="separacion_aside"></div>
+    
     <!-- Footer -->
     <footer class="container-fluid p-3">
         <div class="row">
@@ -156,6 +205,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
         </script>
+
 
 </body>
 

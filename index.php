@@ -49,7 +49,7 @@
                         title="Ir al inicio de la pagina">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a href="nosotrosd.php" class="nav-link"
+                        <a href="nosotros.php" class="nav-link"
                         data-bs-toggle="tooltip" data-bs-placement="bottom"
                         title="Informacion sobre quienes somos">Nosotros</a>
                     </li>
