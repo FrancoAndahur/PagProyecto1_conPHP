@@ -31,7 +31,7 @@
 
         <div class="container">
             <img class="logo" src="img/logo gow.png" alt="logo gow">
-            <a href="index.html" class="navbar-brand">
+            <a href="index.php" class="navbar-brand">
                 <h2>GOD OF WAR</h2>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarS"
@@ -124,6 +124,7 @@
         <div class="row">
             <div class="col-4">
                 <!-- contenido para la columna de la izquierda -->
+                <a id="link-adm" href="usuarios.php">Administrador</a>
     
             </div>
             <div class="col-4">

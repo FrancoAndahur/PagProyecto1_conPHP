@@ -77,6 +77,11 @@ footer{
     
 }
 
+#link-adm{
+    text-decoration: none;
+    color: #170d41;
+}
+
 /* formulario modal */
 .modal-header{
     display: flex;
