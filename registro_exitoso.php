@@ -91,27 +91,9 @@
         <div class="container">
             <div class="row justify-content-center mt-5">
                 <div id="form-box" class="col-md-4 p-3">
-                    <form class="form" action="insertar2.php" method="POST">
-                        <h3 id="titulo-form">Ingrese datos</h3>
-                
-                        <input type="text" class="form-control mb-3" name="nombre" placeholder="Nombre">
-                        <input type="text" class="form-control mb-3" name="apellido" placeholder="Apellido">
-                        <input type="text" class="form-control mb-3" name="usuario" placeholder="Usuario">
-                        <input type="email" class="form-control mb-3" name="correo" placeholder="Correo">
-                        <input type="password" class="form-control mb-3" name="contraseña" placeholder="Contraseña">
-                        <h6 class="sub-titulo">Fecha de nacimiento:</h6>
-                        <input type="date" class="form-control mb-3" name="nacimiento" placeholder="Nacimiento">
-                        <select class="form-select" name="genero">
-                                    <option selected>Selecciona tu género</option>
-                                    <option value="Masculino">Masculino</option>
-                                    <option value="Femenino">Femenino</option>
-                                    <option value="Otro">Otro</option>
-                        </select>
-                        <br>
-                        <input type="text" class="form-control mb-3" name="telefono" placeholder="Teléfono">
-                        <div class="d-grid gap-2">
-                            <button type="submit" class="btn btn-primary btn-lg">Registrarse</button>
-                        </div>
+                    <form class="form" action="index.php" method="POST">
+                        <h3 id="titulo-form">Se ha registrado exitosamente!</h3>
+                        <button type="submit" class="btn btn-primary btn-lg">Volver a inicio</button>
                     </form>
                 </div>
             </div>

@@ -15,7 +15,7 @@ $sql="INSERT INTO usuarios(nombre,apellido,usuario,correo,contraseña,nacimiento
 $query= mysqli_query($con,$sql);
 
 if($query){
-    Header("Location: index.php");
+    Header("Location: registro_exitoso.php");
     
 }else {
 }
