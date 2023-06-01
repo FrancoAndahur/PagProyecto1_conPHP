@@ -36,10 +36,10 @@
 <body class="fondo">
 
     <!--Header-navegador de pagina con bootstrap-->
-    <nav id="header" class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav id="header" class="navbar navbar-expand-lg navbar-dark sticky-top">
 
         <div class="container">
-            <a href="index.html">
+            <a href="index.php">
                 <img class="logo" src="img/logo gow.png" alt="logo gow" transition-style="in:circle:center">
             </a>
             <a href="index.php" class="navbar-brand">
@@ -59,15 +59,15 @@
                         title="Ir al inicio de la pagina">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link"
+                        <a href="nosotros.php" class="nav-link"
                         data-bs-toggle="tooltip" data-bs-placement="bottom"
                         title="Informacion sobre quienes somos">Nosotros</a>
                     </li>
                     <?php if($user){?>
                         <li class="nav-item">
                                 
-                            <a href="misdatos.php" class="nav-link" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                title="salir de la sesion"><?php echo $user ?></a>
+                            <a href="#" class="nav-link" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                title="Editar datos personales"><?php echo $user ?></a>
                         </li>
                     <?php }?>
                     <?php if($user){?>
@@ -91,7 +91,6 @@
 
 
     <!--Contenido de la pagina con bs-->
-    <div class="separacion_aside"></div>
     <div class="container">
 
         <div class="container">
@@ -101,14 +100,20 @@
                         <h3 id="titulo-form">Mis datos</h3>
                 
                         <input type="hidden" name="id" value="<?php echo $row['id']  ?>">
-                                
+                         
+                        <h6 class="sub-titulo">Nombre:</h6>
                         <input type="text" class="form-control mb-3" name="nombre" placeholder="nombre" value="<?php echo $row['nombre']  ?>">
+                        <h6 class="sub-titulo">Apellido:</h6>
                         <input type="text" class="form-control mb-3" name="apellido" placeholder="apellido" value="<?php echo $row['apellido']  ?>">
+                        <h6 class="sub-titulo">Usuario:</h6>
                         <input type="text" class="form-control mb-3" name="usuario" placeholder="usuario" value="<?php echo $row['usuario']  ?>">
+                        <h6 class="sub-titulo">Correo electrónico:</h6>
                         <input type="text" class="form-control mb-3" name="correo" placeholder="correo" value="<?php echo $row['correo']  ?>">
+                        <h6 class="sub-titulo">Contraseña:</h6>
                         <input type="text" class="form-control mb-3" name="contraseña" placeholder="contraseña" value="<?php echo $row['contraseña']  ?>">
                         <h6 class="sub-titulo">Fecha de nacimiento:</h6>
                         <input type="date" class="form-control mb-3" name="nacimiento" placeholder="Nacimiento" value="<?php echo $row['nacimiento']  ?>">
+                        <h6 class="sub-titulo">Género:</h6>
                         <select class="form-select" name="genero" value="<?php echo $row['genero']  ?>">
                             <option selected>Selecciona tu género</option>
                             <option value="Masculino" <?php if ($row['genero']=="Masculino") echo 'selected'; ?> >Masculino</option>
@@ -116,6 +121,7 @@
                             <option value="Otro" <?php if ($row['genero']=="Otro") echo 'selected'; ?> >Otro</option>
                         </select>
                         <br>
+                        <h6 class="sub-titulo">Teléfono:</h6>
                         <input type="text" class="form-control mb-3" name="telefono" placeholder="telefono" value="<?php echo $row['telefono']  ?>">
                                 
                         <div class="d-grid gap-2">
@@ -134,7 +140,6 @@
         <div class="row">
             <div class="col-4">
                 <!-- contenido para la columna de la izquierda -->
-                <a id="link-adm" href="usuarios.php">Administrador</a>
     
             </div>
             <div class="col-4">

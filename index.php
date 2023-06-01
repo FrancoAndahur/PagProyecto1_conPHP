@@ -30,10 +30,10 @@
 <body class="fondo">
 
     <!--Header-navegador de pagina con bootstrap-->
-    <nav id="header" class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav id="header" class="navbar navbar-expand-lg navbar-dark sticky-top">
 
         <div class="container">
-            <a href="index.html">
+            <a href="index.php">
                 <img class="logo" src="img/logo gow.png" alt="logo gow" transition-style="in:circle:center">
             </a>
             <a href="index.php" class="navbar-brand">
@@ -57,11 +57,18 @@
                         data-bs-toggle="tooltip" data-bs-placement="bottom"
                         title="Informacion sobre quienes somos">Nosotros</a>
                     </li>
-                    <?php if($user){?>
+                    <?php if($user=="admin"){?>
+                        <li class="nav-item">
+                                
+                            <a href="usuarios.php" class="nav-link" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                title="Editar datos personales"><?php echo $user ?></a>
+                        </li>
+                    <?php }
+                     elseif($user){?>
                         <li class="nav-item">
                                 
                             <a href="misdatos.php" class="nav-link" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                title="salir de la sesion"><?php echo $user ?></a>
+                                title="Editar datos personales"><?php echo $user ?></a>
                         </li>
                     <?php }?>
                     <?php if($user){?>
@@ -272,7 +279,6 @@
         <div class="row">
             <div class="col-4">
                 <!-- contenido para la columna de la izquierda -->
-                <a id="link-adm" href="usuarios.php">Administrador</a>
                 
             </div>
             <div class="col-4">
