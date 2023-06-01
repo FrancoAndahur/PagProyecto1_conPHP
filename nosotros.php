@@ -1,3 +1,15 @@
+<?php
+
+    include("conexion.php");
+    $con=conectar();
+
+    session_start();
+    $user= $_SESSION['username'];
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="es-ES">
 
@@ -23,24 +35,51 @@
     <nav id="header" class="navbar navbar-expand-lg navbar-dark fixed-top">
 
         <div class="container">
-            <img class="logo" src="img/logo gow.png" alt="logo gow">
-            <a href="index.php" class="navbar-brand">
-                <h2>GOD OF WAR</h2>
+            <a href="index.html">
+                <img class="logo" src="img/logo gow.png" alt="logo gow" transition-style="in:circle:center">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarS"
-                aria-controls="navbarS" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span></button>
+            <a href="index.php" class="navbar-brand">
+            <h2 transition-style="in:wipe:right">GOD OF WAR</h2> </a>
+            <button class="navbar-toggler" type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarS"
+            aria-controls="navbarS" 
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarS">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a href="index.php" class="nav-link">Inicio</a>
+                        <a href="index.php" class="nav-link"
+                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        title="Ir al inicio de la pagina">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Nosotros</a>
+                        <a href="#" class="nav-link"
+                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        title="Informacion sobre quienes somos">Nosotros</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="index.php" class="nav-link">Ingresar</a>
-                    </li>
+                    <?php if($user){?>
+                        <li class="nav-item">
+                                
+                            <a href="misdatos.php" class="nav-link" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                title="salir de la sesion"><?php echo $user ?></a>
+                        </li>
+                    <?php }?>
+                    <?php if($user){?>
+                        <li class="nav-item">
+                                
+                            <a href="salir.php" class="nav-link" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                title="salir de la sesion">Salir</a>
+                        </li>
+                    <?php } else{?>
+                        <li class="nav-item">
+                                
+                            <a href="#Modal" class="nav-link" data-bs-toggle="modal" 
+                                data-bs-target="#Modal" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                title="Accede al formulario de ingreso">Ingresar</a>
+                        </li>
+                    <?php } ?>
                 </ul>
             </div>
         </div>

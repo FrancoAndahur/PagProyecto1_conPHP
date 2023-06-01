@@ -38,9 +38,9 @@ $row=mysqli_fetch_array($query);
                                 <input type="date" class="form-control mb-3" name="nacimiento" placeholder="Nacimiento" value="<?php echo $row['nacimiento']  ?>">
                                 <select class="form-select" name="genero" value="<?php echo $row['genero']  ?>">
                                     <option selected>Selecciona tu género</option>
-                                    <option value="Masculino">Masculino</option>
-                                    <option value="Femenino">Femenino</option>
-                                    <option value="Otro">Otro</option>
+                                    <option value="Masculino" <?php if ($row['genero']=="Masculino") echo 'selected'; ?> >Masculino</option>
+                                    <option value="Femenino" <?php if ($row['genero']=="Femenino") echo 'selected'; ?> >Femenino</option>
+                                    <option value="Otro" <?php if ($row['genero']=="Otro") echo 'selected'; ?> >Otro</option>
                                 </select>
                                 <br>
                                 <input type="text" class="form-control mb-3" name="telefono" placeholder="telefono" value="<?php echo $row['telefono']  ?>">

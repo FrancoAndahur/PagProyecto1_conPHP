@@ -3,6 +3,10 @@
     include("conexion.php");
     $con=conectar();
 
+    session_start();
+    $user= $_SESSION['username'];
+
+
 ?>
 
 <!DOCTYPE html>
@@ -53,12 +57,27 @@
                         data-bs-toggle="tooltip" data-bs-placement="bottom"
                         title="Informacion sobre quienes somos">Nosotros</a>
                     </li>
-                    <li class="nav-item">
-                        
-                        <a href="#Modal" class="nav-link" data-bs-toggle="modal" 
-                        data-bs-target="#Modal" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                        title="Accede al formulario de ingreso">Ingresar</a>
-                    </li>
+                    <?php if($user){?>
+                        <li class="nav-item">
+                                
+                            <a href="misdatos.php" class="nav-link" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                title="salir de la sesion"><?php echo $user ?></a>
+                        </li>
+                    <?php }?>
+                    <?php if($user){?>
+                        <li class="nav-item">
+                                
+                            <a href="salir.php" class="nav-link" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                title="salir de la sesion">Salir</a>
+                        </li>
+                    <?php } else{?>
+                        <li class="nav-item">
+                                
+                            <a href="#Modal" class="nav-link" data-bs-toggle="modal" 
+                                data-bs-target="#Modal" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                title="Accede al formulario de ingreso">Ingresar</a>
+                        </li>
+                    <?php } ?>
                 </ul>
             </div>
         </div>
@@ -294,13 +313,13 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form class="form">
+                    <form class="form" action="logear.php" method="POST">
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="floatingInput" placeholder="Usuario">
+                            <input type="text" name="usuario" class="form-control" id="floatingInput" placeholder="Usuario">
                             <label for="floatingInput">Usuario</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="password" class="form-control" id="floatingPassword" placeholder="Contraseña">
+                            <input type="password" name="contraseña" class="form-control" id="floatingPassword" placeholder="Contraseña">
                             <label for="floatingPassword">Contraseña</label>
                         </div>
                         <div class="d-grid gap-2">
