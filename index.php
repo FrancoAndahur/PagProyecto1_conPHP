@@ -331,7 +331,8 @@
                         <div class="d-grid gap-2">
                             <button type="submit" class="btn btn-primary btn-lg">Ingresar</button>
                         </div>
-                        <a href="nueva_contraseña.php">¡Olvide mi contraseña!</a></p>
+                        <br>
+                        <a id="olvide" href="nueva_contraseña.php">¡Olvide mi contraseña!</a></p>
                         <p id="message" class="text-center mb-0 mt-4">¿no estas registrado?</p>
                         <a href="registro.php">¡Quiero registrarme!</a></p>
                     </form>
