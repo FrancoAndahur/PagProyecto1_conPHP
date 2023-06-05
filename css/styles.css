@@ -33,6 +33,11 @@
   color: goldenrod;
 }
 
+#boton{
+  color: white;
+  background-color: #0b061a;
+  
+}
 .form a:hover {
   color: brown;
 }

@@ -102,31 +102,28 @@
                         <input type="hidden" name="id" value="<?php echo $row['id']  ?>">
                          
                         <h6 class="sub-titulo">Nombre:</h6>
-                        <input type="text" class="form-control mb-3" name="nombre" placeholder="nombre" value="<?php echo $row['nombre']  ?>">
+                        <input type="text" class="form-control mb-3" name="nombre" placeholder="nombre" value="<?php echo $row['nombre']  ?>" readonly>
                         <h6 class="sub-titulo">Apellido:</h6>
-                        <input type="text" class="form-control mb-3" name="apellido" placeholder="apellido" value="<?php echo $row['apellido']  ?>">
+                        <input type="text" class="form-control mb-3" name="apellido" placeholder="apellido" value="<?php echo $row['apellido']  ?>" readonly>
                         <h6 class="sub-titulo">Usuario:</h6>
-                        <input type="text" class="form-control mb-3" name="usuario" placeholder="usuario" value="<?php echo $row['usuario']  ?>">
+                        <input type="text" class="form-control mb-3" name="usuario" placeholder="usuario" value="<?php echo $row['usuario']  ?>" readonly>
                         <h6 class="sub-titulo">Correo electrónico:</h6>
-                        <input type="text" class="form-control mb-3" name="correo" placeholder="correo" value="<?php echo $row['correo']  ?>">
+                        <input type="text" class="form-control mb-3" name="correo" placeholder="correo" value="<?php echo $row['correo']  ?>" readonly>
                         <h6 class="sub-titulo">Contraseña:</h6>
-                        <input type="text" class="form-control mb-3" name="contraseña" placeholder="contraseña" value="<?php echo $row['contraseña']  ?>">
+                        <input type="text" class="form-control mb-3" name="contraseña" placeholder="contraseña" value="<?php echo $row['contraseña']  ?>" readonly>
                         <h6 class="sub-titulo">Fecha de nacimiento:</h6>
-                        <input type="date" class="form-control mb-3" name="nacimiento" placeholder="Nacimiento" value="<?php echo $row['nacimiento']  ?>">
+                        <input type="date" class="form-control mb-3" name="nacimiento" placeholder="Nacimiento" value="<?php echo $row['nacimiento']  ?>" readonly>
                         <h6 class="sub-titulo">Género:</h6>
-                        <select class="form-select" name="genero" value="<?php echo $row['genero']  ?>">
-                            <option selected>Selecciona tu género</option>
+                        <select class="form-select" name="genero" value="<?php echo $row['genero']  ?>" readonly>
+                            <option selected>Selecciona tu género</option readonly>
                             <option value="Masculino" <?php if ($row['genero']=="Masculino") echo 'selected'; ?> >Masculino</option>
                             <option value="Femenino" <?php if ($row['genero']=="Femenino") echo 'selected'; ?> >Femenino</option>
                             <option value="Otro" <?php if ($row['genero']=="Otro") echo 'selected'; ?> >Otro</option>
                         </select>
                         <br>
                         <h6 class="sub-titulo">Teléfono:</h6>
-                        <input type="text" class="form-control mb-3" name="telefono" placeholder="telefono" value="<?php echo $row['telefono']  ?>">
-                                
-                        <div class="d-grid gap-2">
-                            <button type="submit" class="btn btn-primary btn-lg">Actualizar</button>
-                        </div>
+                        <input type="text" class="form-control mb-3" name="telefono" placeholder="telefono" value="<?php echo $row['telefono']  ?>" readonly>
+                        
                     </form>
                 </div>
             </div>

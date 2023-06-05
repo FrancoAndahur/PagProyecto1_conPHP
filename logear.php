@@ -14,8 +14,9 @@ if($array['contar']>0){
     $_SESSION['username'] = $usuario;
     header("location: index.php");
 
-}else{
-    echo "Datos incorrectos";
+}
+else{
+    header("location: cuenta_error.php");
 }
 
 ?>

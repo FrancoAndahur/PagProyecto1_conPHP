@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 
     <title>GOD OF WAR</title>
+    <script>
+  </script>
 </head>
 
 <body class="fondo">
@@ -89,15 +91,27 @@
         <!--Contenido multimedia de la pagina-->
 
         <div class="container">
+
+        <div class="container">
             <div class="row justify-content-center mt-5">
                 <div id="form-box" class="col-md-4 p-3">
-                    <form class="form" action="index.php" method="POST">
-                        <h3 id="titulo-form">Se ha registrado exitosamente!</h3>
-                        <button type="submit" class="btn btn-primary btn-lg">Volver a inicio</button>
+                    <form class="form" action="cambio_contraseña.php" method="POST">
+                        <h3 id="titulo-form">Nueva contraseña</h3>
+                
+                        <h6 class="sub-titulo">Correo electrónico:</h6>
+                        <input type="text" class="form-control mb-3" name="correo" placeholder="correo">
+                        <h6 class="sub-titulo">Nueva Contraseña:</h6>
+                        <input type="text" class="form-control mb-3" name="contraseña" placeholder="contraseña">
+
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary btn-lg">Cambiar</button>
+                        </div>
+                        
                     </form>
                 </div>
             </div>
         </div>
+
     </div>
 
     <div class="separacion_aside"></div>

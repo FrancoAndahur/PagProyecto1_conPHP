@@ -92,8 +92,8 @@
             <div class="row justify-content-center mt-5">
                 <div id="form-box" class="col-md-4 p-3">
                     <form class="form" action="index.php" method="POST">
-                        <h3 id="titulo-form">Se ha registrado exitosamente!</h3>
-                        <button type="submit" class="btn btn-primary btn-lg">Volver a inicio</button>
+                        <h3 id="titulo-form">¡El correo electronico ingresado, no existe!</h3>
+                        <button type="submit" class="btn btn-primary btn-lg">Volver al inicio</button>
                     </form>
                 </div>
             </div>

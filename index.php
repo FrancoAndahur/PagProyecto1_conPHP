@@ -321,16 +321,17 @@
                 <div class="modal-body">
                     <form class="form" action="logear.php" method="POST">
                         <div class="form-floating mb-3">
-                            <input type="text" name="usuario" class="form-control" id="floatingInput" placeholder="Usuario">
+                            <input type="text" name="usuario" autocomplete="off" class="form-control" id="floatingInput" placeholder="Usuario">
                             <label for="floatingInput">Usuario</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="password" name="contraseña" class="form-control" id="floatingPassword" placeholder="Contraseña">
+                            <input type="password" name="contraseña" autocomplete="off" class="form-control" id="floatingPassword" placeholder="Contraseña">
                             <label for="floatingPassword">Contraseña</label>
                         </div>
                         <div class="d-grid gap-2">
                             <button type="submit" class="btn btn-primary btn-lg">Ingresar</button>
                         </div>
+                        <a href="nueva_contraseña.php">¡Olvide mi contraseña!</a></p>
                         <p id="message" class="text-center mb-0 mt-4">¿no estas registrado?</p>
                         <a href="registro.php">¡Quiero registrarme!</a></p>
                     </form>
